@@ -4,7 +4,7 @@ import ReactDom from 'react-dom';
 import { hot } from 'react-hot-loader';
 import SearchBar from './components/search_bar';
 
-// const API_KEY = 'AIzaSyD5lX6_LSK80DZXL-vV-KaSiCeZE62tnGw';
+// const API_KEY = '';
 
 const App = () => {
     return (
