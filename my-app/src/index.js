@@ -1,8 +1,19 @@
+// ./containers/App.js
 import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import registerServiceWorker from './registerServiceWorker';
+import ReactDom from 'react-dom';
+import { hot } from 'react-hot-loader';
+import SearchBar from './components/search_bar';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-registerServiceWorker();
+// const API_KEY = 'AIzaSyD5lX6_LSK80DZXL-vV-KaSiCeZE62tnGw';
+
+const App = () => {
+    return (
+        <div>
+            <SearchBar/>
+        </div>
+    );
+}
+
+export default hot(module)(App);
+
+ReactDom.render(<App />, document.querySelector('.container'));
